@@ -1,3 +1,5 @@
+
+# 对于CB_loss的测试，构造了一个简单的数据集，数据集中有三个类别，使用CB_loss进行训练，以及交叉熵进行训练，对比两者的效果
 import torch
 import torch.nn as nn
 import numpy as np
@@ -101,7 +103,7 @@ model = model.to(device)
 class_per_cls = np.array([num * i for i in per_cls])
 class_per_cls = torch.from_numpy(class_per_cls)
 class_per_cls = class_per_cls.to(device)
-criterion = CB_Loss(class_per_cls, 3, "softmax", 0.9999, 2.0)
+criterion = CB_Loss(class_per_cls, 3, "softmax", 0.0, 2.0)
 # criterion = torch.nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 loss_history = []
@@ -124,4 +126,4 @@ _, predicted = torch.max(outputs.data, 1)
 targets = targets.resize(100,)
 total = targets.size(0)
 correct = (predicted == targets).sum().item()
-print('Accuracy of the network on the 100 test  {} %'.format(100 * correct / total))
+print('Accuracy of the network on the 100 check  {} %'.format(100 * correct / total))

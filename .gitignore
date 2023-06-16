@@ -2,11 +2,15 @@
 .virtual_documents
 .ipynb_checkpoints
 /img
-/img111
 /imgcutresut
 ip102_v1.1
-kaggledata
+datasets
 paper
 yolo_model
 yolo_test
 zip&tar
+temp.ipynb
+psd
+*.pt
+cv_img
+__pycache__
