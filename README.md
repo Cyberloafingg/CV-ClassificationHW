@@ -1,4 +1,5 @@
 # CV期末大作业
+[仓库地址](https://github.com/Cyberloafingg/CV-ClassificationHW.git)
 # 1 环境配置
 1. Yolo训练环境：   
    - 硬件：RTX 3080 16G Laptop，AMD Ryzen 9 5900HX
