@@ -3,7 +3,7 @@
 1. Yolo训练环境：   
    - 硬件：RTX 3080 16G Laptop，AMD Ryzen 9 5900HX
    - Windows11 + Anaconda3 + CUDA11.6 +pytorch1.9.1  
-2. ViT训练环境：  
+2. ViT-SpinalNet训练环境：  
    - 硬件：NVIDIA V100 16G , Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
    - Ubuntu20.04 + CUDA11.3 + pytorch1.9.1 
 # 2 流程
